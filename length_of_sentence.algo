@@ -1,0 +1,41 @@
+ALGORITHM length_of_sentence
+VAR
+    sentence:STRING;
+    i:INTEGER:=0;
+BEGIN
+  
+    Read(sentence)
+    i:=sentence.length;
+    Write(i)
+    
+END
+ALGORITHM number_of_words
+VAR
+    sentence:STRING;
+    i:INTEGER;
+    number:INTEGER:=0;
+    
+BEGIN
+    Read(sentence)
+    FOR i FROM 0 TO sentence.length STEP  DO
+        IF ((sentence[i]=' ') or (sentence[i]='.')) THEN
+            n:=n+1;
+        END_IF   
+    END_FOR
+    Write(n)
+END
+ALGORITHM number_of_words
+VAR
+    sentence:STRING;
+    i:INTEGER;
+    number:INTEGER:=0;
+    
+BEGIN
+    Read(sentence)
+    FOR i FROM 0 TO sentence.length STEP  DO
+        IF ((sentence[i]='i') or (sentence[i]='o') or (sentence[i]='a') or (sentence[i]='e') or (sentence[i]='u') or (sentence[i]='y') ) THEN
+            n:=n+1;
+        END_IF   
+    END_FOR
+    Write(n)
+END
